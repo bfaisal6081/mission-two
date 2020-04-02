@@ -1,0 +1,553 @@
+/*==================================
+ Template name : Paul Lapkin
+ Template URI :
+ Description : Portfolio
+ Author : Badrul Alam
+ Support : bfaisal6081@gmail.com
+ Version : 1.0
+===================================*/
+/*==================================
+   CSS INDEX
+   ===========
+  1.COMMON CSS
+  2.HERO
+  3.ABOUT PAUL
+  4. WORKING PROCESS
+  5. EXPERIENCE
+  6. WORK
+  7. SIGNATURE
+  8. ADDRESS
+  9. FOOTER
+===================================*/
+/*==================================
+
+  1.COMMON CSS
+
+===================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+h1, h2, h3, h4{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  font-size: 650%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 400%;
+
+}
+
+h3{
+  font-size: 260%;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+h4{
+  font-size: 160%;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+   /* REUSABLE COMPONENTS */
+
+  .row,
+  .hero-text-box{
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  section{
+    padding: 120px 0:
+  }
+
+  .btn:link,
+  .btn:visited{
+     width: 200px;
+     background: #000;
+     color: #fff;
+     display: inline-block;
+     text-align: center;
+     padding: 12px 0;
+     font-size: 160%;
+     border: 2px solid #000;
+     transition: .5s;
+  }
+    .section-title{
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+  .section-title p{
+    font-size: 160%;
+    margin: 15px 0;
+  }
+
+  /*==================================
+
+    2. HERO
+
+  ===================================*/
+
+  #hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/hero.jpg) no-repeat center / cover;
+    text-align: center;
+  }
+
+  .logo{
+    height: 45px;
+    margin-top: 45px;
+    float: left;
+  }
+
+  .nav-icon{
+    float: right;
+    margin-top: 45px;
+  }
+
+  .nav-icon ion-icon{
+    color: #fff;
+    font-size: 400%;
+    border: 1px solid #fff;
+    padding: 0 5px;
+  }
+
+  .hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+  }
+
+  h1::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+  }
+
+  .hero-text-box span{
+    font-size: 250%;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  /*==================================
+
+    3. ABOUT PAUL
+
+  ===================================*/
+
+  .grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    margin: 120px 0;
+  }
+
+  .paul{
+    width: 100%;
+  }
+
+  .intro{
+    font-size: 180%;
+    font-weight: 700;
+  }
+
+  .about-paul{
+    font-size: 160%;
+    margin: 30px 0;
+  }
+
+  .btn-full:link,
+  .btn-full:visited{
+    background: #ff2b4a;
+    color: #fff;
+    border-color: #ff2b4a;
+
+  }
+
+  .btn-full:hover,
+  .btn-full:active{
+    background: transparent;
+    color: #ff2b4a;
+  }
+
+  /*==================================
+
+    4. WORKING PROCESS
+
+  ===================================*/
+
+  #process{
+    background: #f6f6f6;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+
+  .grid-process-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 45px;
+  }
+
+  .grid-process-item{
+
+    padding: 80px 0;
+  }
+
+  .grid-process-item:nth-child(1){
+    background: #10c6fc;
+  }
+
+  .grid-process-item:nth-child(2){
+    background: #835aeb;
+  }
+
+  .grid-process-item:nth-child(3){
+    background: #002453;
+  }
+
+  .grid-process-item:nth-child(4){
+    background: #ff2b4a;
+  }
+
+  .process-icon{
+    margin-bottom: 30px;
+  }
+
+  .process-icon ion-icon{
+    font-size: 400%;
+    color: #fff;
+  }
+
+  /*==================================
+
+    5. EXPERIENCE
+
+  ===================================*/
+
+  #experience{
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/experience.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    margin-bottom: 120px;
+  }
+
+  .grid-ex-container{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+.grid-ex-items{
+  background: rgba(0,0,0,0.7);
+  padding: 45px 30px;
+  margin: 60px 0;
+}
+#experience h4{
+  text-transform: capitalize;
+}
+#experience span{
+  font-size: 160%;
+  color: #fff;
+  margin: 15px 0;
+  display: inline-block;
+}
+#experience p{
+  font-size: 160%;
+  color: #fff;
+}
+#experience hr{
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 30px 0;
+}
+/*==================================
+
+  6. WORK
+
+===================================*/
+.grid-work-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 10px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+.grid-work-items{
+  background: #000;
+}
+.grid-work-items:nth-child(1){
+  background: url(img/p1.jpg) no-repeat center / cover;
+}
+.grid-work-items:nth-child(2){
+    background: url(img/p2.jpg) no-repeat center / cover;
+}
+.grid-work-items:nth-child(3){
+    background: url(img/p3.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(4){
+    background: url(img/p4.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(5){
+    background: url(img/p5.jpg) no-repeat center / cover;
+}
+
+.grid-work-items:nth-child(6){
+    background: url(img/p6.jpg) no-repeat center / cover;
+}
+.grid-work-items:nth-child(7){
+    background: url(img/p7.jpg) no-repeat center / cover;
+}
+
+
+.grid-work-items:nth-child(5){
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-column: 1/3;
+
+}
+/*==================================
+
+  7. SIGNATURE
+
+===================================*/
+#signature{
+  float: left;
+  background-color: #64cbc0;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+
+
+}
+.grid-sign-items p{
+  font-size: 160%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+  .grid-sign-items img{
+  margin: 60px 0px 20px 0px ;
+
+}
+.grid-sign-container h4{
+  font-size: 180%;
+  color: #000;
+
+}
+.grid-sign-container span{
+ font-size: 14px;
+  display: inline-block;;
+  color: #000;
+  margin-bottom: 60px;
+}
+/*==================================
+
+  8. ADDRESS SECTION
+
+===================================*/
+#contact{
+
+
+  display:inline-block;
+
+  background: #3c6879;
+  width: 100%;
+  margin-top:0px;
+}
+.contact-col-2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+ .contact-col-item span{
+   font-size: 260%;
+   color: #fff;
+   margin-top: 50px;
+   display: inline-block;
+
+ }
+
+form input[type='text']{
+  font-size: 120%;
+  width: 380px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 5px solid #fff;
+  margin: 20px 0;
+}
+form input[type='email']{
+  font-size: 120%;
+  width: 380px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 5px solid #fff;
+  margin: 20px 0;
+
+}
+textarea{
+  width: 380px;
+  height: 200px;
+  font-size: 140%;
+
+}
+.contact-col-item button{
+  background: #ff2b4a;
+  width: 170px;
+  height: 35px;
+  color: #fff;
+  border: 1px solid  #ff2b4a;
+
+  margin-right: 64px;
+  float: right;
+
+  margin-top: 50px;
+  font-size: 140%;
+}
+.contact-col-2 .bg-color{
+
+width: 500px;
+  height:650px;
+  background: #4d637d;
+  margin-top: 70px;
+  text-align: center;
+  margin: 60px 0;
+
+}
+.add-right{
+  width: 500px;
+  height: 180px;
+  background: #4d637d;
+  color: #fff;
+  margin:60px 0px 50px 0px;
+
+}
+.add-right h4{
+  font-size: 260%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+}
+.add-right span{
+  font-size: 160%;
+  color: #fff;
+margin:30px 0px 0px 40px;
+}
+.phone-right{
+  width: 500px;
+  height: 180px;
+  background: #4d637d;
+  color: #fff;
+  margin:40px 0;
+
+}
+.phone-right span{
+  font-size: 160%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+}
+.phone-right h4{
+  font-size: 260%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+}
+.web-right{
+  width: 500px;
+  height: 190px;
+  background: #4d637d;
+  color: #fff;
+  margin:50px 0;
+
+
+}
+.web-right h4{
+  font-size: 260%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+}
+.web-right span{
+  font-size: 160%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+}
+/*==================================
+
+  9. FOOTER SECTION
+
+===================================*/
+.footer{
+  padding: 80px 40px;
+  margin: 70px 0px 30px 0;
+  background-color: #000;
+}
+ .footer ul {
+   text-align: center;
+
+ }
+
+.footer ul li a{
+  color: red;
+  font-size: 250%;
+
+}
+.footer ul li a:hover{
+  color:green;
+
+}
+.copyright p{
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 30px 20px;
+}

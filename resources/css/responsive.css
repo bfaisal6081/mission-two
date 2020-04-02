@@ -1,0 +1,241 @@
+@media only screen and (max-width: 480px) {
+  .grid-process-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 45px;
+  }
+  .grid-ex-container{
+    display: grid;
+  grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid-work-container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-gap: 10px;
+    margin-top: 60px;
+
+
+  }
+  .grid-work-items:nth-child(5){
+      background: url(img/p5.jpg) no-repeat center /cover;
+  }
+
+  .grid-work-items:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-column: 1/1;
+
+  }
+  /*==================================
+
+    2. HERO
+
+  ===================================*/
+
+  #hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/hero.jpg) no-repeat center / cover;
+    text-align: center;
+  }
+  .logo{
+    height: 45px;
+    margin-top: 45px;
+    float: left;
+    margin-left: 20px;
+  }
+  .nav-icon{
+    float: right;
+    margin-top: 45px;
+    margin-right: 20px;
+  }
+
+  h1{
+    font-size: 400%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*==================================
+
+    3. ABOUT PAUL
+
+  ===================================*/
+
+  .grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    margin: 120px 20px;
+  }
+
+  /*signature section css*/
+  .grid-sign-items p{
+    font-size: 140%;
+    margin: 40px 20px;
+
+  }
+  .grid-sign-items img{
+  margin: 60px 20px ;
+
+}
+.grid-sign-container h4{
+  font-size: 160%;
+  color: #000;
+  margin-left: 20px;
+
+}
+/*contact section*/
+.contact-col-2{
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+ .contact-col-item span{
+   font-size: 260%;
+   color: #fff;
+   margin-top: 50px;
+
+   text-align: center;
+   margin-right: 100px;
+
+ }
+ form input[type='text']{
+   font-size: 120%;
+   width: 180px;
+   height: 40px;
+   border: 1px solid #fff;
+   border-radius: 5px solid #fff;
+   margin: 20px 0;
+     margin-right: 120px;
+ }
+ form input[type='email']{
+   font-size: 120%;
+   width: 180px;
+   height: 40px;
+   border: 1px solid #fff;
+   border-radius: 5px solid #fff;
+   margin:auto;
+      margin-right: 120px;
+
+
+ }
+ textarea{
+   width: 180px;
+   height: 150px;
+   font-size: 140%;
+      margin-right: 120px;
+
+ }
+ .contact-col-item button
+ {
+   background: #ff2b4a;
+   width: 170px;
+   height: 35px;
+   color: #fff;
+   border: 1px solid  #ff2b4a;
+
+
+
+
+   margin-top: 80px;
+   font-size: 140%;
+
+    margin-right: 225px;
+
+
+
+
+
+
+}
+
+
+
+
+
+.contact-col-2 .bg-color{
+
+width: 500px;
+  height:650px;
+  background: #4d637d;
+  margin-top: 70px;
+  text-align: center;
+  margin: 60px 0;
+
+}
+.add-right{
+  width: 500px;
+  height: 180px;
+  background: #4d637d;
+  color: #fff;
+  margin:60px 0px 50px 0px;
+
+
+
+
+}
+.add-right h4{
+  font-size: 160%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+
+
+}
+.add-right span{
+  font-size: 120%;
+  color: #fff;
+margin:30px 100px 30px 40px;
+}
+.phone-right{
+  width: 500px;
+  height: 180px;
+  background: #4d637d;
+  color: #fff;
+  margin:40px 0;
+
+
+
+}
+.phone-right span{
+  font-size: 160%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+}
+.phone-right h4{
+  font-size: 260%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+}
+.web-right{
+  width: 500px;
+  height: 190px;
+  background: #4d637d;
+  color: #fff;
+  margin:50px 0;
+
+
+}
+.web-right h4{
+  font-size: 260%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+  display: inline-block;
+
+}
+.web-right span{
+  font-size: 160%;
+  color: #fff;
+  margin:30px 0px 0px 40px;
+}
+
+
+}
